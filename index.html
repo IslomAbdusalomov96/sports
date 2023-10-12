@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Radio</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Qaysi sport turiga qiziqasiz?</h1>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="label">
+                <input class="input visually-hidden" type="radio" name="sport_turi" value="ping-pong">
+                <span class="form__controller"></span>
+                Stol tennisi
+            </label>
+            <label class="label">
+                <input class="input visually-hidden" type="radio" name="sport_turi" value="basketball">
+                <span class="form__controller"></span>
+                Basketbol
+            </label>
+            <label class="label">
+                <input class="input visually-hidden" type="radio" name="sport_turi" value="volleyball">
+                <span class="form__controller"></span>
+                Voleybol
+            </label>
+            <label class="label label--disabled">
+                <input class="input visually-hidden" type="radio" name="sport_turi" value="hockey" disabled>
+                <span class="form__controller">
+                    <i class="fa-solid fa-hockey-puck"></i>
+                </span>
+                Hokkey
+            </label>
+            <button type="submit" class="btn">Yubormoq</button>
+        </form>
+    </div>
+</body>
+</html>

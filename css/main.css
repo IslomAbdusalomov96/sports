@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
+        url('../fonts/Rubik-Medium.woff') format('woff'),
+        url('../fonts/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
+        url('../fonts/Rubik-Regular.woff') format('woff'),
+        url('../fonts/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik';
+    background-color: #E5E5E5;
+}
+img {
+    vertical-align: middle;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.container {
+    max-width: 437px;
+    margin: 0 auto;
+    padding: 44px 42px 47px 43px;
+    background-color: #FFF;
+}
+.title {
+    margin: 0;
+    margin-bottom: 36px;
+    font-size: 26px;
+}
+.label {
+    display: flex;
+    font-size: 26px;
+    font-weight: 400;
+}
+.label--disabled {
+    color: #AAA;
+}
+.label + .label {
+    margin-top: 18px;
+}
+.form__controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    padding: 5px 6px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.input:checked + .form__controller {
+    background-image: url("../images/ping-pong.png");
+    background-repeat: no-repeat;
+    background-size: 22px 24px;
+    background-position: center;
+    box-shadow: 0px 0px 0px 3px #0E85F3;
+}
+.label:nth-child(2) .input:checked + .form__controller {
+    background-image: url("../images/basketball.png");
+}
+.label:nth-child(3) .input:checked + .form__controller {
+    background-image: url("../images/volleyball-icon.jpg");
+}
+.input:disabled + .form__controller {
+    background-image: url("../images/hockey-puck.png");
+    background-repeat: no-repeat;
+    background-size: 22px 24px;
+    background-position: center;
+    border: 1px solid #AAA;
+}
+/* .label--disabled {
+    color: #AAA;
+} */
+.fa-solid {
+    font-size: 22px;
+    color: #AAA;
+}
+.btn {
+    margin-top: 18px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: dodgerblue;
+    color: #FFF;
+    font-family: 'Rubik';
+    font-size: 16px;
+}
